@@ -1,32 +1,15 @@
 
 <!doctype html>
 <html lang="en">
-
-
-
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Manjula</title>
+    <title>Kenichi Incorporation</title>
     <link rel="icon" href="img/favicon.png">
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!-- animate CSS -->
-    <link rel="stylesheet" href="https://www.manjulaconstruction.com/assets/css/animate.css">
-    <!-- owl carousel CSS -->
-    <link rel="stylesheet" href="https://www.manjulaconstruction.com/assets/css/owl.carousel.min.css">
-    <!-- themify CSS -->
-    <link rel="stylesheet" href="https://www.manjulaconstruction.com/assets/css/themify-icons.css">
-    <!-- flaticon CSS -->
-    <!-- <link rel="stylesheet" href="https://www.manjulaconstruction.com/assets/css/flaticon.css"> -->
-    <!-- font awesome CSS -->
-    <link rel="stylesheet" href="https://www.manjulaconstruction.com/assets/css/magnific-popup.css">
-    <!-- swiper CSS -->
-    <link rel="stylesheet" href="https://www.manjulaconstruction.com/assets/css/slick.css">
-    <!-- style CSS -->
-    <link rel="stylesheet" href="https://www.manjulaconstruction.com/assets/css/construction.css">
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/css/construction.css">
 </head>
 <style>
     .navbar-brand img {
@@ -163,26 +146,11 @@
 
     <!-- jquery plugins here-->
     <!-- jquery -->
-    <script src="https://www.manjulaconstruction.com/assets/js/construction/jquery-1.12.1.min.js"></script>
-    <!-- popper js -->
+    <script src="/assets/js/jquery-1.12.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <!-- bootstrap js -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <!-- easing js -->
-    <script src="https://www.manjulaconstruction.com/assets/js/construction/jquery.magnific-popup.js"></script>
-    <!-- swiper js -->
-    <script src="https://www.manjulaconstruction.com/assets/js/construction/swiper.min.js"></script>
-    <!-- isotope js -->
-    <script src="https://www.manjulaconstruction.com/assets/js/construction/isotope.pkgd.min.js"></script>
-    <!-- particles js -->
-    <script src="https://www.manjulaconstruction.com/assets/js/construction/owl.carousel.min.js"></script>
-    <script src="https://www.manjulaconstruction.com/assets/js/construction/jquery.nice-select.min.js"></script>
-    <!-- swiper js -->
-    <script src="https://www.manjulaconstruction.com/assets/js/construction/slick.min.js"></script>
-    <script src="https://www.manjulaconstruction.com/assets/js/construction/jquery.counterup.min.js"></script>
-    <script src="https://www.manjulaconstruction.com/assets/js/construction/waypoints.min.js"></script>
-    <!-- custom js -->
-    <script src="https://www.manjulaconstruction.com/assets/js/construction/custom.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/custom.js"></script>
 </body>
 
 </html>
