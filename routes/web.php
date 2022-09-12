@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\BackendController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,16 +16,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 Route::get('/home', function () {
     return view('home');
-});Route::get('/about', function () {
+});
+Route::get('/feedback', [FrontendController::class, 'setfeedback']);
+Route::post('/contact', [FrontendController::class, 'setcontact']);
+
+
+Route::get('/about', function () {
     return view('home');
 });Route::get('/gallery', function () {
     return view('home');
-});Route::get('/blog', function () {
-    return view('home');
+});Route::get('/blogs', function () {
+    return view('blogs');
 });
 Route::get('/kfood', function () {
     return view('home');
@@ -43,3 +50,29 @@ Route::get('/kit', function () {
 Route::get('/kwoods', function () {
     return view('home');
 });
+// admin dashboard
+Route::group(['prefix' => '/admin',  'middleware' => 'authnow'], function()
+{
+Route::get('dashboard',[BackendController::class,'dashboardindex'])->name('admin_dashboard');
+Route::get('settings',[BackendController::class,'settingsindex'])->name('admin_settings');
+Route::get('contact',[BackendController::class,'contactindex'])->name('admin_contact');
+Route::get('/contact/delete/{id}',[BackendController::class,'contactdel']);
+Route::get('feedback',[BackendController::class,'feedbackindex'])->name('admin_feedback');
+Route::get('testimonials',[BackendController::class,'testimonialsindex'])->name('admin_testimonials');
+Route::get('subscription',[BackendController::class,'subscriptionindex'])->name('admin_subscription');
+Route::get('emarketing',[BackendController::class,'emarketingindex'])->name('admin_emarketing');
+});
+
+
+
+
+
+
+
+Route::get('/admin/login',function(){
+    return view('backend.login');
+});
+Route::post('/admin/login',[BackendController::class, 'login']);
+
+Route::get('/admin/logout',[BackendController::class, 'logout'])->name('logout');
+

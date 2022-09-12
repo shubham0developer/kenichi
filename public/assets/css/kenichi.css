@@ -2265,7 +2265,7 @@
 	/* line 37 */
 	
 	.main_menu .main-menu-item ul li .nav-link:hover {
-	    color: #ed1448;
+	    color: #0a2363;
 	}
 	/* line 42 */
 	
@@ -2317,7 +2317,7 @@
 	@media (max-width: 991px) {
 	    /* line 91 */
 	    .single_page_menu .navbar-collapse ul li .nav-link {
-	        color: #000 !important;
+	        color: #0a2363 !important;
 	    }
 	    /* line 99 */
 	    .navbar-light .navbar-toggler {
@@ -2389,77 +2389,54 @@
 	/* line 158 */
 	
 	.menu_fixed .main-menu-item ul li .nav-link {
-	    color: #000;
+	    color: #0a2363;
 	}
 	/**************** banner part css start ****************/
-	/* line 2 */
 	
-	.banner_part {
-	    height: 800px;
-	    position: relative;
-	    overflow: hidden;
-	    background-image: url(../images/ezgif.com-gif-maker.jpg);
-	    background-repeat: no-repeat;
-	    background-size: contain;
-	    background-position: right top;
-	}
-	
-	@media (max-width: 991px) {
-	    /* line 2 */
-	    .banner_part {
-	        height: 750px;
-	        background-image: none;
-	        background-color: #f7f7f7;
-	    }
-	}
-	
-	@media only screen and (min-width: 992px) and (max-width: 1200px) {
-	    /* line 2 */
-	    .banner_part {
-	        height: 650px;
-	        background-image: none;
-	        background-color: #f7f7f7;
-	    }
-	}
 	/* line 22 */
 	
-	.banner_part .banner_text {
-	    display: table;
-	    width: 100%;
-	    height: 800px;
+	.banner_text {
+		position: absolute;
+		top: 50%;
+		left: 35%;
+		transform: translate(-50%, -50%);
 	}
 	/* line 26 */
 	
-	.banner_part .banner_text .banner_text_iner {
+	.banner_text .banner_text_iner {
 	    display: table-cell;
 	    vertical-align: middle;
 	}
 	
 	@media (max-width: 991px) {
 	    /* line 26 */
-	    .banner_part .banner_text .banner_text_iner {
+	    .banner_text .banner_text_iner {
 	        vertical-align: middle;
 	    }
 	}
 	
 	@media (max-width: 991px) {
 	    /* line 22 */
-	    .banner_part .banner_text {
-	        text-align: center;
-	        padding-top: 0px;
-	        height: 650px;
+	    .banner_text {
+			position: absolute;
+			top: 50%;
+			left: 35%;
+			transform: translate(-50%, -50%);
 	    }
 	}
 	
 	@media only screen and (min-width: 992px) and (max-width: 1200px) {
 	    /* line 22 */
-	    .banner_part .banner_text {
-	        height: 650px;
+	    .banner_text {
+			position: absolute;
+			top: 50%;
+			left: 35%;
+			transform: translate(-50%, -50%);
 	    }
 	}
 	/* line 42 */
 	
-	.banner_part .banner_text h5 {
+	.banner_text h5 {
 	    font-size: 14px;
 	    text-transform: uppercase;
 	    font-weight: 500;
@@ -2468,7 +2445,7 @@
 	}
 	/* line 49 */
 	
-	.banner_part .banner_text h1 {
+	.banner_text h1 {
 	    font-size: 65px;
 	    text-transform: capitalize;
 	    font-weight: 700;
@@ -2478,7 +2455,7 @@
 	
 	@media (max-width: 991px) {
 	    /* line 49 */
-	    .banner_part .banner_text h1 {
+	    .banner_text h1 {
 	        font-size: 30px;
 	        margin-bottom: 15px;
 	        line-height: 1.3;
@@ -2487,7 +2464,7 @@
 	
 	@media only screen and (min-width: 992px) and (max-width: 1200px) {
 	    /* line 49 */
-	    .banner_part .banner_text h1 {
+	    .banner_text h1 {
 	        font-size: 40px;
 	        margin-bottom: 15px;
 	        line-height: 1.4;
@@ -2495,12 +2472,12 @@
 	}
 	/* line 65 */
 	
-	.banner_part .banner_text h1 span {
+	.banner_text h1 span {
 	    color: #ef2e5d;
 	}
 	/* line 70 */
 	
-	.banner_part .banner_text p {
+	.banner_text p {
 	    font-size: 15px;
 	    line-height: 1.8;
 	    font-family: "Roboto", sans-serif;
@@ -2508,7 +2485,7 @@
 	}
 	/* line 76 */
 	
-	.banner_part .banner_text .btn_1 {
+	.banner_text .btn_1 {
 	    margin-top: 44px;
 	}
 	/**************** hero part css end ****************/
@@ -4571,7 +4548,7 @@
 	sub,
 	u,
 	del {
-	    color: #ef2e5d;
+	    color: #0a2363;
 	}
 	/* line 93 */
 	
@@ -6761,4 +6738,41 @@
 	.footer-area .btn_1 {
 	    margin-top: 0px;
 	}
-	/*# sourceMappingURL=../css/style.map */
+
+	.bl_date{
+		background-color: #00000094;
+		width: 100px;
+		color: white;
+		text-align: center;
+		position: absolute;
+		padding: 10px;
+	}
+	.bl_date h5{
+		color: white;
+		margin: 0px !important;
+	}
+
+
+
+	/* for disssable alert */
+	#pageMessages {
+		position: fixed;
+		bottom: 15px;
+		right: 15px;
+		width: 30%;
+	  }
+	  
+	  .alert {
+		position: relative;
+	  }
+	  
+	  .alert .close {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		font-size: 1em;
+	  }
+	  
+	  .alert .fa {
+		margin-right:.3em;
+	  }
